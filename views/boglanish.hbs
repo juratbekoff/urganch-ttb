@@ -1,0 +1,149 @@
+<div class="container">
+  <main>
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="./Rasmlar/logo1.png" alt="" width="80" height="80">
+      <h2>Урганч ТТБ</h2>
+    </div>
+
+    <form action="/admin" name="myForm" onsubmit="return validateForm()" method="post" class="needs-validation" novalidate>
+      <div class="sirojkalla">
+        <div class="col-md-7 col-lg-8">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Исми</label>
+              <input name="name" type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Фамилияси</label>
+              <input name="surname" type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="email" class="form-label">Email address</label>
+              <input name="email" type="email" class="form-control" id="email" placeholder="email@example.com">
+              <div class="invalid-feedback">
+                Please enter a valid email address for shipping updates.
+              </div>
+            </div>
+
+            <div class="col-md-5">
+              <label for="country" class="form-label">Жинс</label>
+              <select name="gender" class="form-select" id="country" required>
+                <option>Танланг*</option>
+                <option value="male">Эркак</option>
+                <option value="female">Аел</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid gender.
+              </div>
+            </div>
+
+            <div class="col-md-7">
+              <label for="address" class="form-label">Телефон</label>
+              <input name="number" type="text" class="form-control" id="number" placeholder="998(**)" required>
+              <div class="invalid-feedback">
+                Please enter your shipping number.
+              </div>
+            </div>
+
+
+            <div class="col-12">
+              <label for="address" class="form-label">Хабар</label>
+              <input name="text" type="text" class="form-control" id="address" placeholder="Хабар*" required>
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contacts-main" style="font-family: sans-serif;">
+          <h3>Боғланиш:</h3>
+          <div class="contacts-item" style="font-family: sans-serif">
+            <strong>Манзил:</strong>
+            <span>Хоразм вилояти Урганч тумани Ибн Сино кўчаси 12-уй</span>
+          </div>
+          <div class="contacts-item">
+            <strong>Телефон::</strong>
+            <a href="tel:+998(71) 239-47-95">+998 (62) 352-14-73</a>
+          </div>
+          <div class="contacts-item">
+            <strong>Факс:</strong>
+            <a href="fax:+998(71) 241-16-34">+998 (62) 352-16-88</a>
+          </div>
+          <div class="contacts-item">
+            <strong>Электрон почта:</strong>
+            <a href="urgench.tssb.shtab@ssv.uz">urgench.tssb.shtab@ssv.uz</a>
+          </div>
+          <div class="contacts-item">
+            <strong>Ташкилотнинг иш режими:</strong>
+            <span>Душанба - Жума 8:30 дан 17:00 гача</span>
+          </div>
+          <div class="contacts-item">
+            <strong>Қабул кунлари:</strong>
+            <span>Душанба - Жума 8:30 дан 17:00 гача</span>
+          </div>
+          <div class="contacts-item">
+            <strong>Транспорт:</strong>
+            <span><span>Автобус: 6, 19</span></span>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-4 mx-2  ">
+
+      <input class="w-70 btn btn-primary btn-lg" type="submit" onclick="myFunction()" value="Юбориш">
+      <button class="w-65 btn btn-light btn-lg"><a href="/yangiliklar" class="text-decoration-none"> &#8592; Ортга кайтиш </a></button>
+    </form>
+<hr class="my-4 mx-2"> <br><br>
+<h3>Бизнинг манзил:</h3>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6de80c32aee50883b3fc41dce30de0f62821defd46cd6984244317c942bb99d2&amp;width=100%25&amp;height=477&amp;lang=ru_RU&amp;scroll=true">
+function myFunction() {
+  alert("Аризангиз муваффақиятли юборилди!");
+}
+</script>
+</div>
+<script>
+  function validateForm() {
+  var x = document.forms["myForm"]["name"].value;
+  if (x == "") {
+    alert("Хамма жойлар толдирилиши шарт!!!");
+    return false;
+  }
+    var x = document.forms["myForm"]["surname"].value;
+  if (x == "") {
+    alert("Хамма жойлар толдирилиши шарт!!!");
+    return false;
+  }
+    var x = document.forms["myForm"]["email"].value;
+  if (x == "") {
+    alert("Хамма жойлар толдирилиши шарт!!!");
+    return false;
+  }
+    var x = document.forms["myForm"]["gender"].value;
+  if (x == "") {
+    alert("Хамма жойлар толдирилиши шарт!!!");
+    return false;
+  }
+    var x = document.forms["myForm"]["number"].value;
+  if (x == "") {
+    alert("Хамма жойлар толдирилиши шарт!!!");
+    return false;
+  }
+    var x = document.forms["myForm"]["text"].value;
+  if (x == "") {
+    alert("Хамма жойлар толдирилиши шарт!!!");
+    return false;
+  }
+  else{
+    alert("Аризангиз муваффақиятли юборилди!")
+  }
+}
+</script>

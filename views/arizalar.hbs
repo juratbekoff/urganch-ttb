@@ -1,0 +1,39 @@
+<br><br><br><br>
+
+{{#if error}}
+<div class="alert alert-danger" role="alert">
+  {{error}}
+</div>
+{{/if}}
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Ismi</th>
+      <th scope="col">Familiyasi</th>
+      <th scope="col">email</th>
+      <th scope="col">jinsi</th>
+      <th scope="col">telefon raqam</th>
+      <th scope="col">xabar</th>
+    </tr>
+  </thead>
+  <tbody> 
+      {{#each arizalar}}
+    <tr>
+      <th scope="row">{{id}}</th>
+      <td>{{name}}</td>
+      <td>{{surname}}</td>
+      <td>{{email}}</td>
+      <td>{{gender}}</td>
+      <td>{{number}}</td>
+      <td>{{text}}</td>
+      <td class="text-danger">
+         <a href="/delete/{{id}}">
+            DELETE
+            </a>
+      </td>
+    </tr>
+        {{/each}}
+  </tbody>
+</table>
