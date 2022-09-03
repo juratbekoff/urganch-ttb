@@ -11,12 +11,39 @@ router.get('/', (req,res) => {
     
 })
 
+router.get('/admin', (req,res) => {
+    res.render('enter')
+})
+
 router.get('/boglanish', (req,res) => {
     res.render('boglanish' , {
         layout: 'main'
      })
 })
 
+router.get('/rahbariyat', (req,res) => {
+    res.render('rahbariyat' , {
+        layout: 'main'
+     })
+})
+
+router.get('/vazifalari', (req,res) => {
+    res.render('vazifalari' , {
+        layout: 'main'
+     })
+})
+
+router.get('/bolimlar', (req,res) => {
+    res.render('bolimlar' , {
+        layout: 'main'
+     })
+})
+
+router.get('/muassasa', (req,res) => {
+    res.render('muas' , {
+        layout: 'main'
+     })
+})
 
 router.get('/yangiliklar', (req,res) => {
     res.render('yangiliklar' , {

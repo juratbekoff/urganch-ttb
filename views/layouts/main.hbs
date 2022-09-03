@@ -7,61 +7,118 @@
     <title>Urganch tuman tibbiyot birlashmasi</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+      <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Styles -->
     <link rel="stylesheet" href="./style.css">
+
     <link rel="icon" type="image/x-icon" href="./Rasmlar/logo1.png">
+
 </head>
 <body>
-    <div class="conatiner">
-        <header>
-            <img src="/Rasmlar/gerb.png" alt="logo">
-            <div class="heder_text">
-                <h2>Ўзбекистон Республикаси соғлиқни сақлаш вазирлиги</h2>
-                <h1>Урганч туман тиббиёт бирлашмаси</h1>
+    <header class="header">
+        
+        <div class="header-main">
+
+                <div class="header__img">
+                    <img src="./Rasmlar/gerb.png" alt="Gerb">
+                </div>
+
+                <div class="header-text">
+                    <h2 class="header-title">Ўзбекистон Республикаси соғлиқни сақлаш вазирлиги</h2>
+                    <h1 class="header-subtitle">Урганч туман тиббиёт бирлашмаси</h1>
+                </div>
+
+                <div class="header__img">
+                    <img src="./Rasmlar/logo1.png" alt="Sog'liqni saqlash vazirligi">
+                </div>
+
+        </div>
+
+        <nav class="navbar navbar-expand-md" style="padding: 0 2vw;">
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="nav navbar-nav d-flex justify-content-between mx-auto p-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Туман Хақида
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink" style="background-color: #1A6F96;">
+                            <li><a class="dropdown-item" href="/haqida">Умумий маълумот</a></li>
+                            <li><a class="dropdown-item" href="/rahbariyat">Рахбарият</a></li>
+                            <li><a class="dropdown-item" href="/vazifalari">Туман вазифалари</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/yangiliklar"  style="padding: 20px 50px;">Янгиликлар</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/bolimlar"  style="padding: 20px 50px;">Бўлимлар</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/muassasa" style="padding: 20px 50px;">Муассасалар </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/boglanish" style="padding: 20px 50px;">Боғланиш</a>
+                    </li>
+                </ul>
             </div>
-            <img src="/Rasmlar/logo1.png" alt="logo">        
-            </header>
-        <nav  id="tuman_haqida" >
-            <ul>
-                <li><a href="/haqida">Туман Хақида</a></li>
-                <li><a href="/yangiliklar">Янгиликлар </a></li>
-                <li><a href="/boglanish">Боғланиш</a></li>
-                <li><a href="#aloqa">Алoқа</a></li>
-            </ul>
         </nav>
+            </ul>
+        </div> 
 
-    {{{body}}}
+    </header>
+    
 
-        <footer>
-            <div id="aloqa" class="footer_left">
-                <img class="logo"  src="./Rasmlar//logo2.png" alt="log0">
-                <p>Биз ижтимоий тармоқларда:</p>
-                <div class="icons">
-                    <span class="icon_box">
-                      <a href="urgench.tssb.shtab@ssv.uz">  <img src="./Rasmlar/instagram.png" alt="icon"> </a>
-                    </span>
-                    <span class="icon_box">
-                    <a href="urgench.tssb.shtab@ssv.uz">    <img src="./Rasmlar/telegram.png" alt="icon"> </a>
-                    </span>
-                    <span class="icon_box">
-                    <a href="urgench.tssb.shtab@ssv.uz">    <img src="./Rasmlar/twitter.png" alt="icon"> </a>
-                    </span>
-                    <span class="icon_box">
-                    <a href="urgench.tssb.shtab@ssv.uz">    <img src="./Rasmlar/xabar.png" alt="icon"> </a>
-                     </span>
-                </div>
+            {{{body}}}
+
+
+<br><br>
+    <footer class="footer">
+        <div class="footer-section">
+            <div class="footer__img">
+                <img src="./Rasmlar/logo2.png" alt="Sog'liqni saqlash vazirligi">
             </div>
-            <div class="footer_right">
+
+            <div class="social">
+                <div class="footer-text">Биз ижтимоий тармоқларда: </div>
+                    <div class="social-links">
+                        <a href="#"><img src="./Rasmlar/instagram.png" alt="instagram"></a>                  
+                        <a href="#"><img src="./Rasmlar/telegram.png" alt="telegram"></a>                  
+                        <a href="#"><img src="./Rasmlar/twitter.png" alt="twitter"></a>                  
+                        <a href="#"><img src="./Rasmlar/xabar.png" alt="xabar"></a>
+                    </div>
+                </div>
+
+        </div>
+
+        <div class="footer-section footer-right">
+            <div class="footer-contact">
                 <h1>Алоқа:</h1>
-                <div class="tel">
-                    <img src="./Rasmlar/tel.png" alt="icon">
-                    <div class="d-flex flex-column">
-                    <h2>+998 (62) 352-14-73</h2>
-                    <h2>+998 (62) 352-16-88</h2>
+                <div class="footer-nums">
+                    <div class="phone-img">
+                        <img src="./Rasmlar/tel.png" alt="telefon">
+                    </div>
+                    <div class="nums">
+                        <h2>+998 (62) 352-14-73</h2>
+                        <h2>+998 (62) 352-16-88</h2>
+                    </div>
                 </div>
-                </div>
-                <p>© 2022 Урганч туман тиббиёт бирлашмаси</p>
+
+                <div class="footer-text by" style="margin-left:200px;">© 2022 Урганч туман тиббиёт бирлашмаси</div>
             </div>
-        </footer>
-    </div>
-</body>
-</html>
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+               <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    </body>
+    </html>
