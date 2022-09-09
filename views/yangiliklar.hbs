@@ -1,4 +1,4 @@
- <main class="page">
+ <main class="page" >
         <div class="page__main-block main-block">
             <div class="main-block__body">
                 <h1 class="main-block__title">Урганч туман тиббиёт бирлашмаси</h1>                    
@@ -14,48 +14,45 @@
                     <img src="./Rasmlar/rasm4.jpg" alt="...">
                 </div>
             </div>
-{{#if error}}
-<div class="alert alert-danger" role="alert">
-  {{error}}
-</div>
-{{/if}}
 
             <section class="page__content yangiliklar">
                 <div class="row row-cols-1 row-cols-md-2 mx-auto my-5" style="max-width: 1440px;">
                    
                         <div class="card p-0 col border-0">
-                             {{#each yangiliklar}}
+                             
                             <a  href="#" class="card-link _link d-flex align-items-center" style="color: #1A6F96;">
                         
-                                <div class="date"><span>{{date}}</span></div>
+                                <div class="date">6<span><br>Сен</span></div>
 
                                 <div class="card-body p-0">
                                     <h2 class="card-title mt-3">
-                                            {{subtitle}}
+                                            Россияда маймун чечагига қарши вакцина ишлаб чиқилди
                                     </h2>
                         
                                     <div class="card-data">
-                                        <p class="card-text d-flex opacity-50" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.5;">{{message}}</p>
+                                        <p class="card-text d-flex opacity-50" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.5;">Россиянинг Федерал тиббий-биологик агентлиги (ФМБА) маймун чечаги инфекциясига қарши вакцина ишлаб чиқди. Айни пайтда янги препарат клиник синовдан ўтказилмоқда.
+Агентлик раҳбари Вероника Скворцованинг маълум қилишича, дастлабки тадқиқотлар мазкур вакцина юқори самарадорлик ва иммуногенликка эга. Энг муҳими, у хавфсиз бўлиб, ножўя таъсирларни келтириб чиқармайди.</p>
                         
                                     </div>
                                 </div>
                             </a>
-                             {{/each}}
+                            
                         </div>
                        
                         
-                        {{!-- <div class="card p-0 col border-0">
-                            <a href="#" class="card-link _link d-flex align-items-center">
+                        <div class="card p-0 col border-0">
+                            <a href="#" class="card-link _link d-flex align-items-center"  style="color: #1A6F96;">
                         
-                                <div class="date">90<br><span>Янв</span></div>
+                                <div class="date">6<br><span>Сен</span></div>
                                 
                                 <div class="card-body p-0">
                                     <h2 class="card-title mt-3">
-                                        Оёқларингиз увишадими?
+                                        ССВ: Мактаб ошхоналарида “фастфуд” тайёрлаш ва сотиш тақиқланган
                                     </h2>
                     
                                     <div class="card-data">
-                                        <p class="card-text d-flex opacity-50" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.5;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error repellat, consequatur illo, harum excepturi commodi architecto rerum pariatur at culpa sequi quos suscipit consectetur. Porro dolorum cum repudiandae molestiae accusantium deserunt fugit dolorem unde libero temporibus, sunt deleniti dolore at, eligendi harum dicta minus! Quaerat inventore voluptatibus officia impedit voluptatum? Quo, autem sequi ut aut, sapiente tempora vero optio magnam natus ipsa quod alias laboriosam rerum totam quam dolorum molestias facilis assumenda cupiditate doloremque molestiae maxime reprehenderit. Natus odit dignissimos debitis cum dicta alias aliquid commodi consectetur quos tempore voluptatem quisquam id est, iusto numquam neque a explicabo corporis dolore.</p>
+                                        <p class="card-text d-flex opacity-50" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.5;">Хот-дог, лаваш, гамбургер, “хрустяшки”, чипс, газли ичимликлар. Бугунги кун болалари ва ҳатто ёшлари севиб истеъмол қиладиган маҳсулотларнинг кичик бир рўйхати бу.   
+Бироқ ушбу егулик ва ичимликлар саломатлик учун зиён. Шу сабабли Жаҳон соғлиқни сақлаш ташкилоти уларни кундалик таомномадан чиқаришни тавсия қилади. Қолаверса, бу турдаги маҳсулотлар юртимиздаги умумтаълим муассасаларида рухсат этилмайдиган озиқ-овқат ва таомлар рўйхатига киритилган.</p>
                     
                                     </div>
                                 </div>
@@ -64,17 +61,17 @@
                         </div>
 
                         <div class="card p-0 col border-0">
-                            <a href="#" class="card-link _link d-flex align-items-center">
+                            <a href="#" class="card-link _link d-flex align-items-center" style="color:#1A6F96 ;">
                         
-                                <div class="date">90<br><span>Янв</span></div>
+                                <div class="date">6<br><span>Сен</span></div>
                                 
                                 <div class="card-body p-0">
                                     <h2 class="card-title mt-3">
-                                        Оёқларингиз увишадими?
+                                        Сентябрь ойидан тиббиётда нималар ўзгаради?
                                     </h2>
                     
                                     <div class="card-data">
-                                        <p class="card-text d-flex opacity-50" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.5;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error repellat, consequatur illo, harum excepturi commodi architecto rerum pariatur at culpa sequi quos suscipit consectetur. Porro dolorum cum repudiandae molestiae accusantium deserunt fugit dolorem unde libero temporibus, sunt deleniti dolore at, eligendi harum dicta minus! Quaerat inventore voluptatibus officia impedit voluptatum? Quo, autem sequi ut aut, sapiente tempora vero optio magnam natus ipsa quod alias laboriosam rerum totam quam dolorum molestias facilis assumenda cupiditate doloremque molestiae maxime reprehenderit. Natus odit dignissimos debitis cum dicta alias aliquid commodi consectetur quos tempore voluptatem quisquam id est, iusto numquam neque a explicabo corporis dolore.</p>
+                                        <p class="card-text d-flex opacity-50" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.5;">Президентимизнинг шу йил 25 апрелдаги “Бирламчи тиббий-санитария ёрдамини аҳолига яқинлаштириш ва тиббий хизматлар самарадорлигини ошириш бўйича қўшимча чора-тадбирлар тўғрисида”ги қарорига мувофиқ:2022 йил 1 сентябрдан бошлаб шифокорларнинг якка тартибда оилавий шифокорлик фаолиятини юритишга рухсат берилди.</p>
                     
                                     </div>
                                 </div>
@@ -83,24 +80,27 @@
                         </div>
                         
                         <div class="card p-0 col border-0">
-                            <a href="#" class="card-link _link d-flex align-items-center">
+                            <a href="#" class="card-link _link d-flex align-items-center"  style="color: #1A6F96;">
                                 
-                                <div class="date">90<br><span>Янв</span></div>    
+                                <div class="date">6<br><span>Сен</span></div>    
                     
                                 <div class="card-body p-0">
                                     <h2 class="card-title mt-3">
-                                        Оёқларингиз увишадими?
+                                    Коронавирус: кеча 16 нафар фуқарода касалланиш қайд этилди
                                     </h2>
                     
                                     <div class="card-data">
-                                        <p class="card-text d-flex opacity-50" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.5;">Кўпчилик инсонлар узоқ муддат бир жойда туриб ёки ўтириб қолса, оёқлари увишиб, ўзини ноқулай ҳис қилади. Бу ҳолат таъсири баъзиларда ўрнидан қўзғалиши билан йўқолса, айрим кишиларда увишган оёқлар маълум вақтдан кейингина ўзига келади.</p>
+                                        <p class="card-text d-flex opacity-50" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.5;">2022 йил 5 сентябрь куни рўйхатга олинган беморларнинг:
+
+5 нафари Cурхондарё вилоятида,
+11 нафари Тошкент шаҳрида коронавирусга чалинган беморлар билан мулоқотда бўлганлиги сабабли намуна олинган фуқаролар орасида қайд этилди</p>
                     
                                     </div>
                                 </div>
                             </a>
                             
                         </div>
---}}
+
                         </div>
                     </div>
             </section>

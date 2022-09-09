@@ -4,6 +4,7 @@ import cors from 'cors'
 import path from "path";
 import arizaRoutes from './routes/ariza.routes'
 
+
 const app = express()
 
 app.use(express.static(path.join(__dirname, '../public')));
