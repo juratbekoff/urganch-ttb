@@ -71,7 +71,7 @@ router.get('/admin4868', (req,res) => {
     .catch((error) => res.render('arizalar', { error }))
 })
 
-router.post('/admin', (req,res) => {
+router.post('/admin4868', (req,res) => {
     let ariza: Ariza = {
         id: 0,
         name: req.body.name,
