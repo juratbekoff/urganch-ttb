@@ -3,7 +3,7 @@ import { engine } from "express-handlebars";
 import cors from 'cors'
 import path from "path";
 import arizaRoutes from './routes/ariza.routes'
-
+require('dotenv').config()
 
 const app = express()
 
@@ -19,6 +19,7 @@ app.set('views', './views')
 
 app.use('/', arizaRoutes)
 
-app.listen(process.env.PORT || 9090, () => {
-    console.log("Started on localhost:9090");
+const port = process.env.PORT
+app.listen(port || 8085, () => {
+    console.log(`Server is running on ${port}`);
 })  

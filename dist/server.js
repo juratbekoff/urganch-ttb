@@ -8,6 +8,7 @@ var express_handlebars_1 = require("express-handlebars");
 var cors_1 = __importDefault(require("cors"));
 var path_1 = __importDefault(require("path"));
 var ariza_routes_1 = __importDefault(require("./routes/ariza.routes"));
+require('dotenv').config();
 var app = (0, express_1["default"])();
 app.use(express_1["default"].static(path_1["default"].join(__dirname, '../public')));
 app.use((0, cors_1["default"])());
@@ -17,7 +18,8 @@ app.engine('.hbs', (0, express_handlebars_1.engine)({ extname: '.hbs' }));
 app.set('view engine', '.hbs');
 app.set('views', './views');
 app.use('/', ariza_routes_1["default"]);
-app.listen(process.env.PORT || 9090, function () {
-    console.log("Started on localhost:9090");
+var port = process.env.PORT;
+app.listen(port || 8085, function () {
+    console.log("Server is running on ".concat(port));
 });
 //# sourceMappingURL=server.js.map

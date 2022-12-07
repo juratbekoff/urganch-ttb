@@ -58,7 +58,7 @@ router.get('/admin4868', function (req, res) {
     ariza_service_1["default"].findAll()
         .then(function (arizalar) { return res.render('arizalar', { layout: 'index', arizalar: arizalar }); })["catch"](function (error) { return res.render('arizalar', { error: error }); });
 });
-router.post('/admin', function (req, res) {
+router.post('/admin4868', function (req, res) {
     var ariza = {
         id: 0,
         name: req.body.name,
