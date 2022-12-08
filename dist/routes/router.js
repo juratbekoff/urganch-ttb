@@ -4,7 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 exports.__esModule = true;
 var express_1 = require("express");
-var ariza_service_1 = __importDefault(require("../service/ariza.service"));
+var service_1 = __importDefault(require("../service/service"));
 var router = (0, express_1.Router)();
 router
     .get('/', function (req, res) {
@@ -28,9 +28,6 @@ router
     .get('/muassasa', function (req, res) {
     res.render('muas');
 })
-    .get('/yangiliklar', function (req, res) {
-    res.render('yangiliklar');
-})
     .get('/haqida', function (req, res) {
     res.render('haqida');
 })
@@ -41,14 +38,16 @@ router
     });
 })
     .get('/admin4868', function (req, res) {
-    ariza_service_1["default"].findAll()
+    service_1["default"].findAll()
         .then(function (arizalar) { return res.render('arizalar', { layout: 'index', arizalar: arizalar }); })["catch"](function (error) { return res.render('arizalar', { error: error }); });
-});
-router.get('/admin4868', function (req, res) {
-    ariza_service_1["default"].findAll()
-        .then(function (arizalar) { return res.render('arizalar', { layout: 'index', arizalar: arizalar }); })["catch"](function (error) { return res.render('arizalar', { error: error }); });
-});
-router.post('/admin4868', function (req, res) {
+})
+    .get('/yangiliklar', function (req, res) {
+    service_1["default"].getAllNews()
+        .then(function (all_news) {
+        res.render('yangiliklar', { layout: 'main', all_news: all_news });
+    });
+})
+    .post('/admin4868', function (req, res) {
     var ariza = {
         id: 0,
         name: req.body.name,
@@ -58,12 +57,27 @@ router.post('/admin4868', function (req, res) {
         number: req.body.number,
         text: req.body.text
     };
-    ariza_service_1["default"].create(ariza)
+    service_1["default"].create(ariza)
         .then(function (data) { return res.redirect('/boglanish'); })["catch"](function (error) { return res.render('arizalar', { error: error }); });
-});
-router.get('/delete/:id', function (req, res) {
-    ariza_service_1["default"].RemoveAriza(+req.params.id)
+})
+    .post('/yangiliklar', function (req, res) {
+    try {
+        var news = {
+            id: 0,
+            title: req.body.title,
+            date: req.body.date,
+            message: req.body.message
+        };
+        service_1["default"].createNews(news);
+        res.redirect('/newsadmin');
+    }
+    catch (error) {
+        console.log(error);
+    }
+})
+    .get('/delete/:id', function (req, res) {
+    service_1["default"].RemoveAriza(+req.params.id)
         .then(function (data) { return res.redirect('/admin4868'); })["catch"](function (error) { return res.render('index', { error: error }); });
 });
 exports["default"] = router;
-//# sourceMappingURL=ariza.routes.js.map
+//# sourceMappingURL=router.js.map

@@ -2,7 +2,7 @@ import  express from "express";
 import { engine } from "express-handlebars";
 import cors from 'cors'
 import path from "path";
-import arizaRoutes from './routes/ariza.routes'
+import router from './routes/router'
 require('dotenv').config()
 
 const app = express()
@@ -17,7 +17,7 @@ app.engine('.hbs', engine({ extname: '.hbs' }))
 app.set('view engine', '.hbs')
 app.set('views', './views')
 
-app.use('/', arizaRoutes)
+app.use('/', router)
 
 const port = process.env.PORT
 app.listen(port || 8085, () => {

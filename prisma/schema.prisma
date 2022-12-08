@@ -22,7 +22,7 @@ model Ariza {
 
 model Publish {
   id         Int  @id  @default(autoincrement())
-  img        String
   date       String
+  title      String
   message    String
 }
